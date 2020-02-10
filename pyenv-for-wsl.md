@@ -38,3 +38,5 @@ _For the purposes of these instructions, I will reference the current version of
 3. Verify that the above steps executed correctly by running `python -V`. The output of that command should be the installed Python version.
 
 That's it! You now have a clean version of Python installed on your Windows machine with WSL. To learn about more advanced commands for pyenv, [please take a look at their docs](https://github.com/pyenv/pyenv).
+
+If you'd like to get set up with virtual environments in your new pyenv-enabled WSL, check out my instructions [here](https://github.com/fcabissi/useful-stuff/blob/master/pyenv-virtual-environments.md).
