@@ -25,7 +25,7 @@ Now finally, we install pyenv. If you prefer, you can find installation instruct
 3. Add the following lines to the **end** of your `.bashrc`:
 ```
 # pyenv commands
-export PATH="/home/sileog/.pyenv/bin:$PATH"
+export PATH="/home/{your username}/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 ```
