@@ -30,6 +30,7 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 ```
 4. Run `source ~/.bashrc`
+
 pyenv is now installed in WSL.
 ### Installing and managing Python versions with pyenv
 _For the purposes of these instructions, I will reference the current version of python, `3.8.1`_
