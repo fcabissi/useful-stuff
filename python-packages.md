@@ -7,4 +7,4 @@
 
 ### Parallel Computing
 - [`joblib`](https://github.com/joblib/joblib): simple API for parallel processing
-- [`ray`](https://github.com/ray-project/ray): more advanved parallel processing
+- [`ray`](https://github.com/ray-project/ray): more advanced parallel processing
