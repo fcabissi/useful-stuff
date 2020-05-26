@@ -1,9 +1,12 @@
+### Data Engineering
+- [`gspread`](https://github.com/burnash/gspread): pull data from google sheets without all the hassle
+
 ### Geographic
 - [`timezonefinder`](https://github.com/MrMinimal64/timezonefinder): local geopoint -> Olson DB timezone lookup
   - also provides full shapefile of each timezone
-
-### Data Engineering
-- [`gspread`](https://github.com/burnash/gspread): pull data from google sheets without all the hassle
+  
+### Network/Communications
+- [`websockets`](https://github.com/aaugustin/websockets): library that allows you to set up websockets
 
 ### Parallel Computing
 - [`joblib`](https://github.com/joblib/joblib): simple API for parallel processing
