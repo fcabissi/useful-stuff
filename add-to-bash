@@ -1,0 +1,20 @@
+# Start virtual environments
+startenv() {
+    source ~/.virtualenvs/"$1"/bin/activate
+}
+
+# Make virtual environments
+mkenv() {
+    virtualenv ~/.virtualenvs/"$1"
+}
+
+# Switch to another virtual environment
+switchenv() {
+    deactivate; startenv "$1"
+}
+
+# List virtual environments
+
+listenv() {
+    ls ~/.virtualenvs
+}
