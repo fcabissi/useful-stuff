@@ -19,13 +19,13 @@ Follow the instructions [here](https://docs.microsoft.com/en-us/windows/wsl/inst
 `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
 
 3. Restart your computer to complete the WSL install.
-4. Set WSL2 as your defaul version. Open Windows Terminal as Administrator, and run the following command in a PowerShell tab:
-
+4. Set WSL2 as your default version. Open Windows Terminal as Administrator, and run the following command in a PowerShell tab:
 `wsl --set-default-version 2`
-
-  a. You may see a message: `WSL 2 requires an update to its kernel component. For information please visit https://aka.ms/wsl2kernel`. Head [here](https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel) to download the Linux kernel update package.
-  b. Run the downloaded `.msi`. Select "Yes" at each installation step.
-  c. Now run the command above again, it should now work without issue.
+<ol type="a">
+  <li>You may see a message: `WSL 2 requires an update to its kernel component. For information please visit https://aka.ms/wsl2kernel`. Head [here](https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel) to download the Linux kernel update package.</li>
+  <li>Run the downloaded `.msi`. Select "Yes" at each installation step.</li>
+  <li>Now run the command above again, it should now work without issue.</li>
+</ol>
 5. Download and install your Linux distribution of choice from the Microsoft Store. I recommend Ubuntu 20.04 LTS (or whatever the latest version is) as the default, as I've found that most of the questions I have about issues have already been answered a thousand times online.
 6. Launch Ubuntu and set a username and password when prompted.
 7. Close Ubuntu and Windows Terminal, then relaunch Windows Terminal and open an Ubuntu tab.
