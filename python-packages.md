@@ -1,5 +1,6 @@
 ### Data Engineering
 - [`gspread`](https://github.com/burnash/gspread): pull data from google sheets without all the hassle
+- [`smart_open`](https://github.com/RaRe-Technologies/smart_open): better drop-in for Python's `open` builtin function
 
 ### Geographic
 - [`timezonefinder`](https://github.com/MrMinimal64/timezonefinder): local geopoint -> Olson DB timezone lookup
