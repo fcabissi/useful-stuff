@@ -20,23 +20,34 @@ Follow the instructions [here](https://docs.microsoft.com/en-us/windows/wsl/inst
 
 3. Restart your computer to complete the WSL install.
 4. Set WSL2 as your default version. Open Windows Terminal as Administrator, and run the following command in a PowerShell tab:
+
 `wsl --set-default-version 2`
+
 <ol type="a">
   <li>You may see a message: `WSL 2 requires an update to its kernel component. For information please visit https://aka.ms/wsl2kernel`. Head [here](https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel) to download the Linux kernel update package.</li>
   <li>Run the downloaded `.msi`. Select "Yes" at each installation step.</li>
   <li>Now run the command above again, it should now work without issue.</li>
 </ol>
+
 5. Download and install your Linux distribution of choice from the Microsoft Store. I recommend Ubuntu 20.04 LTS (or whatever the latest version is) as the default, as I've found that most of the questions I have about issues have already been answered a thousand times online.
+
 6. Launch Ubuntu and set a username and password when prompted.
+
 7. Close Ubuntu and Windows Terminal, then relaunch Windows Terminal and open an Ubuntu tab.
+
 ### Installing pyenv
 _Note: During the following steps, answer yes to any prompts for permissions when you install these packages._
 My preferred method of managing multiple versions of Python on the same system is [Pyenv](https://github.com/pyenv/pyenv). It can take some getting used to, but ultimately I have found that is produces the fewest unintended consequences on my systems.
+
 #### Before installing pyenv
 We need to do a few quick housekeeping things.
+
 1. Run `sudo apt-get update`
+
 2. Run `sudo apt-get install make`
+
 3. Run `sudo apt-get install gcc`
+
 #### Install Pyenv
 Now finally, we install pyenv. If you prefer, you can find installation instructions and documentation [here](https://github.com/pyenv/pyenv).
 1. Run `curl https://pyenv.run | bash`
@@ -51,6 +62,7 @@ eval "$(pyenv virtualenv-init -)"
 4. Run `source ~/.bashrc`
 
 pyenv is now installed in WSL 2.
+
 ### Installing and managing Python versions with pyenv
 _For the purposes of these instructions, I will reference the current version of python, `3.8.1`_
 1. Install your preferred version of Python by running `pyenv install 3.8.1`. To view a list of Python distributions available for installation, run `pyenv install -l`. The installation step can take a while depending on the age/speed of your system.
