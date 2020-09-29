@@ -24,9 +24,11 @@ Follow the instructions [here](https://docs.microsoft.com/en-us/windows/wsl/inst
 `wsl --set-default-version 2`
 
 <ol type="a">
-  <li>You may see a message: `WSL 2 requires an update to its kernel component. For information please visit https://aka.ms/wsl2kernel`. Head [here](https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel) to download the Linux kernel update package.</li>
+<ol type="a">
+  <li>You may see a message: <code>WSL 2 requires an update to its kernel component. For information please visit https://aka.ms/wsl2kernel</code>. Head <a href="https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel">here</a> to download the Linux kernel update package.</li>
   <li>Run the downloaded `.msi`. Select "Yes" at each installation step.</li>
   <li>Now run the command above again, it should now work without issue.</li>
+</ol>
 </ol>
 
 5. Download and install your Linux distribution of choice from the Microsoft Store. I recommend Ubuntu 20.04 LTS (or whatever the latest version is) as the default, as I've found that most of the questions I have about issues have already been answered a thousand times online.
