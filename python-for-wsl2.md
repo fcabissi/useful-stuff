@@ -10,7 +10,7 @@ While not strictly necessary, [Windows Terminal](https://docs.microsoft.com/en-u
 
 Follow the instructions [here](https://docs.microsoft.com/en-us/windows/wsl/install-win10). I've reproduced an abbreviated version of those instructions below.
 
-1.  Launch Windows Terminal as Administrator. It should open a PowerShell tab. Run the following command:
+1.  Launch Windows Terminal as Administrator by right clicking on the application and selecting the option. Occassionally it is categorized under "More". This should open a PowerShell tab. Run the following command:
 
 `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
 
@@ -19,7 +19,7 @@ Follow the instructions [here](https://docs.microsoft.com/en-us/windows/wsl/inst
 `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
 
 3. Restart your computer to complete the WSL install.
-4. Set WSL2 as your default version. Open Windows Terminal as Administrator, and run the following command in a PowerShell tab:
+4. Set WSL2 as your default version. Open Windows Terminal as Administrator and run the following command in a PowerShell tab:
 
 `wsl --set-default-version 2`
 
@@ -36,6 +36,26 @@ Follow the instructions [here](https://docs.microsoft.com/en-us/windows/wsl/inst
 6. Launch Ubuntu and set a username and password when prompted.
 
 7. Close Ubuntu and Windows Terminal, then relaunch Windows Terminal and open an Ubuntu tab.
+
+### To set Ubuntu as your Windows Terminal default 
+
+1.  Launch Windows Terminal, and click on the &or;, and navigate to Settings.
+
+2.  In the "profiles" section there should be a list with a few ids underneath, for example, "Windows PowerShell", "Command Prompt", etc. Scroll down to the profile with a "name" containing Ubuntu.
+
+3. Add another key by placing a comma at the end of the "source" line, and entering another line containing:
+```
+"startingDirectory": "\\\wsl$\\{name}\\home\\{your username}"
+```
+where {name} should match the name listed above the "source" line, and {your username} should match your username.
+
+4. Copy your Ubuntu "guid", and after the first { and before the "profiles" section add a line: 
+```
+"defaultProfile": "{your guid}",
+```
+
+5. Save and close. Now Windows Terminal will open to Ubuntu by default.
+
 
 ### Installing pyenv
 _Note: During the following steps, answer yes to any prompts for permissions when you install these packages._
