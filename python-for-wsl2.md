@@ -41,7 +41,7 @@ Follow the instructions [here](https://docs.microsoft.com/en-us/windows/wsl/inst
 
 1.  Launch Windows Terminal, and click on the &or;, and navigate to Settings.
 
-2.  In the "profiles" xectionm there should be a list with a few ids underneath, for example, "Windows PowerShell", "Command Prompt", etc. Scroll down to the profile with a "name" containing Ubuntu.
+2.  In the "profiles" section there should be a list with a few ids underneath, for example, "Windows PowerShell", "Command Prompt", etc. Scroll down to the profile with a "name" containing Ubuntu.
 
 3. Add another key by placing a comma at the end of the "source" line, and entering another line containing:
 ```
