@@ -19,7 +19,7 @@ Follow the instructions [here](https://docs.microsoft.com/en-us/windows/wsl/inst
 `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
 
 3. Restart your computer to complete the WSL install.
-4. Set WSL2 as your default version. Open Windows Terminal as Administrator (either , and run the following command in a PowerShell tab:
+4. Set WSL2 as your default version. Open Windows Terminal as Administrator and run the following command in a PowerShell tab:
 
 `wsl --set-default-version 2`
 
