@@ -69,6 +69,7 @@ We need to do a few quick housekeeping things.
 2. Run `sudo apt-get install make`
 
 3. Run `sudo apt-get install gcc`
+4. Run `sudo apt install tk-dev`
 
 #### Install Pyenv
 Now finally, we install pyenv. If you prefer, you can find installation instructions and documentation [here](https://github.com/pyenv/pyenv).
